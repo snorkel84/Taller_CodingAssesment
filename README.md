@@ -1,6 +1,7 @@
 # Taller_CodingAssesment
 
 C#/Razor
+
 You have a model that is a car. You want to define its make, model, year, doors, colors, price. Build a simple service that contains some basic CRUD operations against a list of cars:
 
 ```
@@ -18,6 +19,7 @@ Build a simple page markup with where you display the car information and allow 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 SQL
+
 You have three different tables
 A Customer Table with FirstName, LastName, Age, Occupation, MartialStatus, PersonID
 
