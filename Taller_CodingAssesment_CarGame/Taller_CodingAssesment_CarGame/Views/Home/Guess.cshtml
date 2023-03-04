@@ -1,0 +1,24 @@
+﻿@model CarViewModel
+@{
+    ViewData["Title"] = "Guess the price";
+}
+<h1>@Model.Make @Model.Model</h1>
+
+<p>Year: @Model.Year</p>
+<p>Doors: @Model.Doors</p>
+<p>Color: @Model.Color</p>
+
+<form method="post">
+    @Html.AntiForgeryToken()
+    <label for="guess">Guess the price:</label>
+    <input type="number" id="guess" name="guess" required>
+    <button type="submit">Submit</button>
+</form>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@if (ViewBag.Message != null)
+{
+    <p style="color: @ViewBag.Color">@ViewBag.Message</p>
+}
